@@ -6,8 +6,8 @@ user_reg = '^([A-Z|a-z])+\d*[^.]@[a-z]+.[a-z]+'
 password_log = '^((?=.*[a-z]))((?=.*[A-Z]))(?=.*\d)((?=.*[!@#$%^&.+]))[A-Za-z\d!@#$%^&.+]{5,16}$'
 
 # Opening a blank text file to store the username & password
-Data = open("newfile.txt", "r")
-Data.read()
+Data = open("newfile.txt", "a")
+Data.write("")
 Data.close()
 
 # Code to Register the username 
